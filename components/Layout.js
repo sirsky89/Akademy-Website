@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Store } from '../utils/Store';
 import DropdownLink from './DropdownLink';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function Layout({ title, children }) {
   const { status, data: session } = useSession();
@@ -37,7 +38,7 @@ export default function Layout({ title, children }) {
 
       <div className="flex min-h-screen flex-col justify-between bg-rose-400 font-body">
         <header>
-          <nav className="flex h-16 items-center px-4 justify-between shadow-md">
+          <nav className="flex h-16 items-center px-3 justify-between shadow-md">
             <div className="flex items-center">
               <Image
                 src="/images/akademy.png"
@@ -64,7 +65,7 @@ export default function Layout({ title, children }) {
               {status === 'loading' ? (
                 'Loading'
               ) : session?.user ? (
-                <Menu as="div" className="relative inline-block mr-2">
+                <Menu as="div" className="relative inline-block">
                   <Menu.Button className=" text-white hover:text-rose-600 uppercase font-bold">
                     {session.user.name}
                   </Menu.Button>
@@ -112,9 +113,7 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Copyright © 2022 Akademy</p>
-        </footer>
+        <Footer />
       </div>
     </>
   );
