@@ -11,10 +11,34 @@ export default function Footer() {
         <ul>
           <p className="text-white font-bold text-3xl pb-6">Akademy</p>
           <div className="flex gap-6 pb-5 justify-center">
-            <FaInstagram className="text-2xl cursor-pointer text-white hover:text-yellow-200" />
-            <FaGithub className="text-2xl cursor-pointer text-white hover:text-black" />
-            <FaLinkedin className="text-2xl cursor-pointer text-white hover:text-blue-600" />
-            <FaYoutube className="text-2xl cursor-pointer text-white hover:text-red-600" />
+            <a
+              href="https://github.com/sirsky89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl cursor-pointer text-white hover:text-yellow-200" />
+            </a>
+            <a
+              href="https://github.com/sirsky89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-2xl cursor-pointer text-white hover:text-black" />
+            </a>
+            <a
+              href="https://github.com/sirsky89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-2xl cursor-pointer text-white hover:text-blue-600" />
+            </a>
+            <a
+              href="https://github.com/sirsky89"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="text-2xl cursor-pointer text-white hover:text-red-600" />
+            </a>
           </div>
           <p className="text-white font-bold text-3xl pb-6 ">
             Copyright © 2022 Akademy
